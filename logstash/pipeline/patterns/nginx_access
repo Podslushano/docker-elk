@@ -1,0 +1,2 @@
+METHOD (OPTIONS|GET|HEAD|POST|PUT|DELETE|TRACE|CONNECT)
+nginx_access %{IPORHOST:visitor_ip} - \[%{HTTPDATE:time_local}\] \\"%{DATA:server_name}\\" \\"%{METHOD:method} %{URIPATHPARAM:path} HTTP/%{NUMBER:http_version}\\" %{INT:status} %{INT:body_bytes_sent} \\"%{DATA:referrer}\\" \\"%{DATA:user_agent}\\"
