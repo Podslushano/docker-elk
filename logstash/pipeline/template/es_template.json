@@ -19,12 +19,12 @@
         "body_bytes_sent": {
           "type" : "integer"
         },
-        "upstream_response_time" : {
-          "type" : "number"
-        },
-        "request_time" : {
-          "type" : "number"
-        },
+          "upstream_response_time" : {
+            "type" : "float"
+          },
+          "request_time" : {
+            "type" : "float"
+          },
         "message" : {
           "type" : "text"
         },
