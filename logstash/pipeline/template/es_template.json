@@ -11,13 +11,19 @@
       "_all" : {
         "enabled" : false,
         "norms" : false
-      } ,
+      },
       "properties" : {
         "@timestamp" : {
           "type" : "date"
         },
         "body_bytes_sent": {
           "type" : "integer"
+        },
+        "upstream_response_time" : {
+          "type" : "number"
+        },
+        "request_time" : {
+          "type" : "number"
         },
         "message" : {
           "type" : "text"
