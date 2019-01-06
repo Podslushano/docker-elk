@@ -11,7 +11,7 @@
       "_all" : {
         "enabled" : false,
         "norms" : false
-      },
+      } ,
       "properties" : {
         "@timestamp" : {
           "type" : "date"
@@ -74,35 +74,6 @@
         },
         "visitor_ip" : {
           "type": "ip"
-        }
-      }
-    },
-    "nginx_error" : {
-      "_all" : {
-        "enabled" : false,
-        "norms" : false
-      },
-      "properties" : {
-        "@timestamp" : {
-          "type" : "date"
-        },
-        "level" : {
-          "type" : "keyword"
-        },
-        "process_id" : {
-          "type" : "integer"
-        },
-        "thread_id" : {
-          "type" : "integer"
-        },
-        "connection_id" : {
-          "type" : "integer"
-        },
-        "message" : {
-          "type" : "text"
-        },
-        "content" : {
-          "type" : "text"
         }
       }
     }
